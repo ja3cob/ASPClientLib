@@ -3,4 +3,4 @@
 namespace ASPClientLib.Classes;
 
 public class ActionResult : IActionResult;
-public class ActionResult<T> : ActionResult;
+public class ActionResult<T>;
