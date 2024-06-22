@@ -1,7 +1,9 @@
 ﻿namespace ASPClientLib.Attributes;
 
-public class HttpGetAttribute : Attribute;
-public class HttpPostAttribute : Attribute;
-public class HttpPutAttribute : Attribute;
-public class HttpDeleteAttribute : Attribute;
-public class HttpPatchAttribute : Attribute;
+public class HttpMethodAttribute : Attribute;
+
+public class HttpGetAttribute : HttpMethodAttribute;
+public class HttpPostAttribute : HttpMethodAttribute;
+public class HttpPutAttribute : HttpMethodAttribute;
+public class HttpDeleteAttribute : HttpMethodAttribute;
+public class HttpPatchAttribute : HttpMethodAttribute;
