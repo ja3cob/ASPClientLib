@@ -13,9 +13,9 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        source-url: https://nuget.pkg.github.com/ja3cob/index.json
+        source-url: https://api.nuget.org/v3/index.json
       env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}     
+        NUGET_AUTH_TOKEN: ${{secrets.NUGET_KEY}}
     - name: Pack
       run: dotnet pack --configuration Release -o out
     - name: Push
