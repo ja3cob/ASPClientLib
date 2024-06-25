@@ -2,7 +2,13 @@
 
 namespace ASPClientLib.Classes;
 
-public class ActionResult : IActionResult;
+public class ActionResult : IActionResult
+{
+    public ActionResult()
+    {
+        
+    }
+}
 
 public class ActionResult<T>(T value)
 {
