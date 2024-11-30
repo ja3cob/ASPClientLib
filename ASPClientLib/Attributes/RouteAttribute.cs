@@ -1,8 +1,19 @@
-﻿namespace ASPClientLib.Attributes;
+﻿using System;
 
-public class RouteAttribute(string template) : Attribute
+namespace ASPClientLib.Attributes
 {
-    public string Template { get; } = template;
-}
+    public class RouteAttribute : Attribute
+    {
+        public string Template { get; }
 
-public class RouteApiControllerAttribute(string? template = null) : RouteAttribute("api/[controller]/" + template);
+        public RouteAttribute(string template)
+        {
+            Template = template;
+        }
+    }
+
+    public class RouteApiControllerAttribute : RouteAttribute
+    {
+        public RouteApiControllerAttribute(string? template = null) : base("api/[controller]/" + template) { }
+    }
+}

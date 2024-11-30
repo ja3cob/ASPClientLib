@@ -1,16 +1,16 @@
 ﻿using ASPClientLib.Interfaces;
 
-namespace ASPClientLib.Classes;
-
-public class ActionResult : IActionResult
+namespace ASPClientLib.Classes
 {
-    public ActionResult()
+    public class ActionResult : IActionResult { }
+
+    public class ActionResult<T>
     {
-        
-    }
-}
+        public T Value { get; }
 
-public class ActionResult<T>(T value)
-{
-    public T Value { get; } = value;
+        public ActionResult(T value)
+        {
+            Value = value;
+        }
+    }
 }

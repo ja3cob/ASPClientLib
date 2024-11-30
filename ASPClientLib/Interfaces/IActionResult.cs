@@ -1,3 +1,4 @@
-﻿namespace ASPClientLib.Interfaces;
-
-public interface IActionResult;
+﻿namespace ASPClientLib.Interfaces
+{
+    public interface IActionResult { }
+}
