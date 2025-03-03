@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <Description>Library of necessary attributes, interfaces and classes representing these from ASP.NET Core</Description>
     <Company>Ja3cob</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
